@@ -21,6 +21,7 @@ function ImageSlider() {
             <Wrap>
                 <img src="./images/slider-scale.jpg" />
             </Wrap>
+        
             <Wrap>
                 <img src='./images/slider-badag.jpg' />
             </Wrap>
@@ -34,6 +35,7 @@ function ImageSlider() {
 
 
 const Carousel=styled(Slider)`
+
     .slick-list{
         overflow:visible;
     }

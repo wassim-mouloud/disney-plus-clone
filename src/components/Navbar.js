@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import {Link} from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -7,10 +8,10 @@ function Navbar() {
         <Nav>
             <Logo src='/images/logo.svg'/>
             <NavMenu>
-                <a>
+                <Link to='/' >
                     <img src="/images/home-icon.svg" alt="" />
                     <span>Home</span>
-                </a>
+                </Link>
                 <a>
                     <img src="/images/search-icon.svg" alt="" />
                     <span>Search</span>
@@ -54,6 +55,8 @@ const NavMenu=styled.div`
     display:flex;
     flex:1;
     margin-left:20px;
+    
+    
     a{
         text-decoration:none;
         display:flex;
@@ -70,6 +73,7 @@ const NavMenu=styled.div`
         font-size:13px;
         letter-spacing:1.42px;
         margin-left:10px;
+        color:white;
         &::after{
             content:'';
             position:absolute;
@@ -81,7 +85,7 @@ const NavMenu=styled.div`
             border-radius:5px;
             opacity:0;
             transform:scaleX(0);
-            transition:all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition:all 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
         }
         &:hover{
             &::after{

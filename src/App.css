@@ -1,3 +1,16 @@
 * {
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+::-webkit-scrollbar-track {
+  background: #090b13;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0f3460;
+
+  border-radius: 100vw;
+}
