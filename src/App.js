@@ -8,10 +8,6 @@ import Detail from './components/Detail';
 import Login from './components/Login';
 function App() {
   return (
-
-    
-
-
     <div className="App">
       <Navbar/>
       <Routes>
